@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "parameters": "--vulnerable --include-transitive",
+  "sources": [
+    "https://api.nuget.org/v3/index.json"
+  ],
+  "projects": [
+    {
+      "path": "C:/Users/v-nvanhout/source/repos/NET10PackageListIssue/WebApp/WebApp.csproj",
+      "frameworks": [
+        {
+          "framework": "net10.0",
+          "topLevelPackages": []
+        }
+      ]
+    }
+  ]
+}

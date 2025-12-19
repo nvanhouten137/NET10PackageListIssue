@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "parameters": "--vulnerable --include-transitive",
+  "sources": [
+    "https://api.nuget.org/v3/index.json"
+  ],
+  "projects": [
+    {
+      "path": "C:/Users/v-nvanhout/source/repos/NET10PackageListIssue/WebApp/WebApp.csproj",
+      "frameworks": [
+        {
+          "framework": "net8.0",
+          "topLevelPackages": [],
+          "transitivePackages": [
+            {
+              "id": "Microsoft.AspNetCore.Server.IIS",
+              "resolvedVersion": "2.2.0",
+              "vulnerabilities": [
+                {
+                  "severity": "Moderate",
+                  "advisoryurl": "https://github.com/advisories/GHSA-prrf-397v-83xh"
+                }
+              ]
+            },
+            {
+              "id": "Microsoft.AspNetCore.Server.Kestrel.Core",
+              "resolvedVersion": "2.2.0",
+              "vulnerabilities": [
+                {
+                  "severity": "Critical",
+                  "advisoryurl": "https://github.com/advisories/GHSA-5rrx-jjjq-q2r5"
+                }
+              ]
+            },
+            {
+              "id": "System.Net.Http",
+              "resolvedVersion": "4.3.0",
+              "vulnerabilities": [
+                {
+                  "severity": "High",
+                  "advisoryurl": "https://github.com/advisories/GHSA-7jgj-8wvc-jh57"
+                }
+              ]
+            },
+            {
+              "id": "System.Security.Cryptography.Xml",
+              "resolvedVersion": "4.5.0",
+              "vulnerabilities": [
+                {
+                  "severity": "Moderate",
+                  "advisoryurl": "https://github.com/advisories/GHSA-vh55-786g-wjwj"
+                }
+              ]
+            },
+            {
+              "id": "System.Text.Encodings.Web",
+              "resolvedVersion": "4.5.0",
+              "vulnerabilities": [
+                {
+                  "severity": "Critical",
+                  "advisoryurl": "https://github.com/advisories/GHSA-ghhp-997w-qr28"
+                }
+              ]
+            },
+            {
+              "id": "System.Text.RegularExpressions",
+              "resolvedVersion": "4.3.0",
+              "vulnerabilities": [
+                {
+                  "severity": "High",
+                  "advisoryurl": "https://github.com/advisories/GHSA-cmhx-cq75-c4mj"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "parameters": "--vulnerable --include-transitive",
+  "sources": [
+    "https://api.nuget.org/v3/index.json"
+  ],
+  "projects": [
+    {
+      "path": "C:/Users/v-nvanhout/source/repos/NET10PackageListIssue/WebApp/WebApp.csproj",
+      "frameworks": [
+        {
+          "framework": "net10.0",
+          "topLevelPackages": []
+        }
+      ]
+    },
+    {
+      "path": "C:/Users/v-nvanhout/source/repos/NET10PackageListIssue/WebApp.Tests/WebApp.Tests.csproj",
+      "frameworks": [
+        {
+          "framework": "net10.0",
+          "topLevelPackages": [],
+          "transitivePackages": [
+            {
+              "id": "Microsoft.AspNetCore.Server.IIS",
+              "resolvedVersion": "2.2.0",
+              "vulnerabilities": [
+                {
+                  "severity": "Moderate",
+                  "advisoryurl": "https://github.com/advisories/GHSA-prrf-397v-83xh"
+                }
+              ]
+            },
+            {
+              "id": "Microsoft.AspNetCore.Server.Kestrel.Core",
+              "resolvedVersion": "2.2.0",
+              "vulnerabilities": [
+                {
+                  "severity": "Critical",
+                  "advisoryurl": "https://github.com/advisories/GHSA-5rrx-jjjq-q2r5"
+                }
+              ]
+            },
+            {
+              "id": "System.Security.Cryptography.Xml",
+              "resolvedVersion": "4.5.0",
+              "vulnerabilities": [
+                {
+                  "severity": "Moderate",
+                  "advisoryurl": "https://github.com/advisories/GHSA-vh55-786g-wjwj"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
